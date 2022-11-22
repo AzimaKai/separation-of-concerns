@@ -34,7 +34,9 @@
         <script id="dom-manipulation-script">
           'use strict';
           debugger;
-
+          const actual = document.getElementById('actual')
+          const h1Element = actual.children[0];
+          h1Element.innerText = 'hi';
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>
       </div>

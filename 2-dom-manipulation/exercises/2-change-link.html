@@ -31,14 +31,17 @@
 
         <div id="actual">
           <a href="https://www.badgerbadgerbadger.com" expected="blank"
-            >learn about pigs</a
-          >
+            >learn about pigs</a>
         </div>
 
         <script id="dom-manipulation-script">
           'use strict';
           debugger;
+          const actual = document.getElementById('actual');
+          const linkElement = actual.children[0];
+          linkElement.innerText = 'learn about badgers';
 
+          
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>
       </div>
